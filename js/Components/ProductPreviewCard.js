@@ -19,6 +19,7 @@ export default function ProductPreviewCard(product) {
     $currentPrice.textContent = "$" + product.currentPrice;
     $oldPrice.textContent = "$" + product.oldPrice;
     $img.src = product.img.mobile;
+    $img.alt = product.name;
     $source.srcset = product.img.desktop;
     $source.media = "(min-width: 800px)";
     $picture.prepend($source);
