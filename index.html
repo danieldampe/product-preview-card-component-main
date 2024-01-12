@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Product preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+    </style>
+</head>
+<body>
+    <!-- HTML -->
+    <div id="root">
+        <main id="main" class="main"></main>
+        <footer class="footer attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://github.com/danieldampe" target="_blank">danieldampe</a>.
+        </footer>
+    </div>
+    <!-- Components -->
+    <template id="product-preview-card">
+        <div class="product-preview-card">
+            <picture class="product-preview-card-picture">
+                <img class="product-preview-card-img">
+            </picture>
+            <div class="product-preview-card-details">
+                <span class="product-preview-card-category"></span>
+                <h6 class="product-preview-card-name"></h6>
+                <p class="product-preview-card-description"></p>
+                <div class="product-preview-card-price">
+                    <span class="product-preview-card-current-price"></span>
+                    <span class="product-preview-card-old-price"></span>
+                </div>
+                <button class="product-preview-card-btn">
+                    <img class="product-preview-card-icon-cart" src="./images/icon-cart.svg" alt="Icon Cart"> Add to Cart
+                </button>
+            </div>
+        </div>
+    </template>
+    <!-- JS -->
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
