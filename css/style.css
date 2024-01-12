@@ -136,7 +136,8 @@ hr {
         object-fit: cover;
     }
 
-    .product-preview-card-name { font-size: 2.1rem; }
+    .product-preview-card-name,
+    .product-preview-card-current-price { font-size: 2.1rem; }
 
     .product-preview-card-details {
         justify-content: space-between;
